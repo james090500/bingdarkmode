@@ -11,21 +11,29 @@
     },
     "content_scripts": [
         {
-            "css": ["css/main.css", "css/search.css"],
+            "css": ["css/main.css"],
+            "js": ["js/main.js"],
+            "matches": [
+                "https://bing.com/*",
+                "https://www.bing.com/*"
+            ]
+        },
+        {
+            "css": ["css/search.css"],
             "matches": [
                 "https://bing.com/search?q=*",
                 "https://www.bing.com/search?q=*"
             ]
         },
         {
-            "css": ["css/main.css", "css/images.css"],
+            "css": ["css/images.css"],
             "matches": [
                 "https://bing.com/images/search?q=*",
                 "https://www.bing.com/images/search?q=*"
             ]
         },
         {
-            "css": ["css/main.css", "css/videos.css"],
+            "css": ["css/videos.css"],
             "matches": [
                 "https://bing.com/videos/search?q=*",
                 "https://www.bing.com/videos/search?q=*"

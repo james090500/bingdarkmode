@@ -8,12 +8,6 @@
     background-color: var(--dark) !important;
 }
 
-.infnmpt .infpd a, .inline_tile .carousel h2,
-#rfPaneIn .touchQuery .carousel-scroll-wrapper .suggestion-title-wrapper .suggestion-title, #b_tq_header .suggestion-title-wrapper .suggestion-title,
-.ftrP11, #miniheader #miniheader_data .itm>div.it, #miniheader #miniheader_data .itm>div.it strong {
-    color: var(--text-color) !important;
-}
-
 #rfPaneIn .touchQuery .carousel .item, #b_tq_header .suggestions-scroll-content .suggestion-item, #miniheader #miniheader_data .header_exp div.sug.underline {
     border-color: var(--very-dark) !important;
 }

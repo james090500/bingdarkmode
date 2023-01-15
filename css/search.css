@@ -1,35 +1,47 @@
-.scs_faAc .scs_faAcCon div.scs_rdLnk,#b_context .b_rrsr>.b_vList>li a:hover,#sw_as li.pp_tile.sa_hv, #b_results > li {
-	background-color: var(--dark) !important;
+#b_results > li, .l_ecrd_bkg_hlt {
+    background: none !important;
 }
 
-#b_results #brsv3 .b_vList li a, .slide, #b_results>.b_pag a.sb_pagP:hover, #b_results>.b_pag a.sb_pagN:hover,#b_results>.b_pag .sb_pagS_bp:hover,#b_results>.b_pag a:hover,html #b_header .sa_as .sa_drw,.lite-entcard-main, .lite-entcard-blk, .lite-entcard-exp,.tab-menu.tab-hasnav > ul > li, .tab-navr, .tab-navl,#b_context .b_ans, #b_context #wpc_ag {
-	background-color: var(--dark-light) !important;
+/* Side Card */
+.lite-entcard-exp {
+    background: var(--light-dark) !important;
 }
 
-.scs_box, .b_rrsr, .b_scard, .scs_t, #id_hbfo {
-	background-color: var(--dark-light) !important;
-	border: 1px solid var(--very-dark) !important;
+/** Special search boxes */
+#b_results .b_algo .b_deeplinks_block_container .b_vlist2col.b_deep ul li {
+    background: var(--very-dark) !important;
+}
+
+/* Videos */
+.mc_vtvc_meta {
+    background: var(--very-dark) !important;
+}
+
+/* Tags or something */
+#serpvidans .qpbold {
+    background: var(--dark) !important;
+}
+
+#serpvidans .rel_ent_w.rel_ent_scr.qpexp:not(.rel_ent_crs) .rel_ent_c .rel_ent {
+    background: var(--very-dark) !important;
+    border-color: var(--dark-light) !important;
+}
+
+.grad {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 0%,var(--dark) 100%) !important;
+}
+
+/* Business Cards */
+#b_context .b_ans, #b_context #wpc_ag {
+    background: var(--very-dark) !important;
+}
+
+/** Card at bottom */
+#b_results #brsv3 .b_vList li a {
+    background: var(--very-dark) !important;
 }
 
 /** URL on search */
 cite, #b_results cite.sb_crmb a, #b_results cite a.sb_metalink, #b_results .b_adurl cite a, #bk_wr_container cite a {
 	color: #adadad !important;
-}
-
-#b_results > li#mfa_root {
-	background-color: transparent !important;
-}
-
-/** Hyperlinks **/
-#b_results > li a, a, #b_tween a:visited, #b_results .b_no a, .wr_pub {
-	color: #1890ff !important
-}
-
-.df_alaskcarousel.rqnaContainerwithfeedback .openans_gradient_div,.scs_faAc .scs_faAcCon div.scs_rdLnk::before {
-	background: linear-gradient(270deg, var(--dark) -26.53%,transparent 100%) !important
-}
-
-.sb_pagN_bp:hover:after, .sb_pagN_bp:active:after, .sb_pagN_bp:focus:after,.sb_pagP_bp:hover:after, .sb_pagP_bp:active:after, .sb_pagP_bp:focus:after {
-	-webkit-transform-origin: -430px 0 !important;
-	transform-origin: -430px 0 !important;
 }

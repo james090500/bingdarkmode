@@ -1,3 +1,4 @@
+/** Variagles */
 :root {
 	--dark: #191c20;
 	--dark-light: #25282c;
@@ -6,28 +7,67 @@
 	color-scheme: dark !important;
 }
 
+/** Main background **/
 html, body, .hb_section:active, .hb_section:hover, .hb_section:visited,
 #b-scopeListItem-menu .b_sp_over_menu, .ftrD_MmVert {
 	background-color: var(--dark) !important;
 }
 
+/** Header */
 #b_header, #b_content, #id_hbfo, #miniheader table {
     background-color: var(--dark) !important;
 }
 
-.b_searchboxForm #sw_as .sa_hv,#sw_as li.pp_tile.sa_hv, .b_searchboxForm #sw_as .sa_hv {
+#b_pole .b_wpTabsWrapper,
+#b_content #b_pole .ent-dtab-content, #b_content #b_pole .ent-dtab-content > div:first-child {
+	background-color: var(--very-dark) !important;
+}
+
+.ent-dtab-ovr.ent-dtab-ovr-nl.def-override.ent-dtab-tabuxv1,
+#rfPaneIn .touchQuery .carousel .item, #b_tq_header .suggestions-scroll-content .suggestion-item,
+#miniheader #miniheader_data .header_exp div.sug.underline {
+	border-color: var(--very-dark) !important;
+	background-color: var(--dark-light) !important;
+}
+
+/** Search Box */
+.sbox .sb_form, .b_searchboxForm #sw_as .sa_hv,#sw_as li.pp_tile.sa_hv, .b_searchboxForm #sw_as .sa_hv,
+.sbox .sb_form #sw_as .sa_as #sa_ul.sa_drw:not(:empty):before, #sw_as .sa_hv {
 	background-color: var(--dark) !important;
 }
 
+#sw_as .sa_as .sa_sg .sa_tm, #sw_as .sa_as .b_tHeader, #sw_as .sa_as .b_demoteText, #sw_as .sa_as .b_secondaryText,
+#sw_as .sa_as .b_attribution, #sw_as .sa_as .b_factrow, #sw_as .sa_as #sa_ul .b_focusLabel, #sw_as .sa_as .b_footnote,
+#sw_as .sa_as .b_ad .b_adlabel, #sw_as .sa_as .b_expando .b_subModule, #sw_as .sa_as .b_expando .b_suppModule,
+#sw_as .sa_as .b_algo .b_vList td, #sw_as .sa_as .b_expando .b_secondaryText, #sw_as .sa_as .b_expando .b_attribution,
+#sw_as .sa_as .b_expando .b_factrow, #sw_as .sa_as .b_expando .b_footnote, #sw_as .sa_as .ctxtb, #sw_as .as_msbblocksug,
+#sw_as .as_msbblockheader, #sw_as .sa_msbribboncontainer, #sw_as .sa_as .sa_rmvd, #sw_as .sa_as .sa_drw, #sw_as .sa_as li.pp_tile,
+#sw_as .sa_as .sa_tm strong, #sw_as .sa_as table {
+	color: var(--text-color) !important;
+}
+
+/** More Search */
 html #b_header .b_searchboxForm.as_rsform .sa_as>.as_rmhswarning,.b_searchboxForm, .sa_as .sa_drw,.b_searchboxForm.as_rsform #sw_as .sa_as {
 	background-color: var(--dark-light) !important;
 }
 
+/** Footer */
 .b_footer {
 	background-color: var(--very-dark) !important;
 }
 
-/* Text */
-#b_header .b_searchbox, .hbic_col, .hb_title_col, .hb_value_col, .lite-entcard-main, .b_text, #uaanswer .b_searchboxForm,#b_results, #b_results .b_defaultText, #b_results>.b_pag a:hover, #b_tween .b_toggle:hover, #b_tween .b_highlighted,.df_alaskcarousel .df_alsocon,.qna_elc .rwrl, .df_c .rwrl, #b_results .df_c .b_entityTitle,.b_scopebar, .b_scopebar a, .b_scopebar a:visited, .id_button, .id_button:visited,.df_alaskcarousel .df_qntext,.b_imgcap_altitle p strong, .b_imgcap_altitle .b_factrow strong,.b_caption p strong, .b_caption .b_factrow strong, .b_secondaryText strong,.b_caption, .snippet,.b_footer, .b_footer a, .b_footer a:visited,#b_results .b_ans #brsv3 h2,#b_results #brsv3 .b_vList a .b_suggestionText,.scs_faAc .scs_faAcCon .rwrl_small,#b_super_task_pane .scs_faAc .b_module_expansion .b_expansion_text,#b_super_task_pane .scs_c .scs_faTi h2, #b_super_task_pane .scs_c .scs_ssTi h2,#b_super_task_pane .scs_c .scs_child .scs_ti h2,#b_results, #b_results .b_defaultText, #b_results>.b_pag a:hover, #b_tween .b_toggle:hover, #b_tween .b_highlighted,#b_super_task_pane .scs_c .scs_gec>.b_module_expansion .b_expansion_text,.scs_ss .scs_ssBd,.scs_faAc .b_module_expansion .b_expansion_text,.b_rrsr h2,#sw_as .sa_as .sa_sg .sa_tm, #sw_as .sa_as .b_tHeader, #sw_as .sa_as .b_demoteText, #sw_as .sa_as .b_secondaryText,#sw_as .sa_as .b_attribution, #sw_as .sa_as .b_factrow, #sw_as .sa_as #sa_ul .b_focusLabel, #sw_as .sa_as .b_footnote,#sw_as .sa_as .b_ad .b_adlabel, #sw_as .sa_as .b_expando .b_subModule, #sw_as .sa_as .b_expando .b_suppModule, #sw_as.sa_as .b_algo .b_vList td, #sw_as .sa_as .b_expando .b_secondaryText, #sw_as .sa_as .b_expando .b_attribution,#sw_as .sa_as .b_expando .b_factrow, #sw_as .sa_as .b_expando .b_footnote, #sw_as .sa_as .ctxtb, #sw_as .as_msbblocksug,#sw_as .as_msbblockheader, #sw_as .sa_msbribboncontainer, #sw_as .sa_as .sa_rmvd,#sw_as .sa_as .sa_drw, #sw_as .sa_as li.pp_tile, #sw_as .sa_as .sa_tm strong, #sw_as .sa_as table,#b_results>.b_top .b_prominentFocusLabel, #b_results>.b_top .b_topTitle, #b_results>.b_top .b_focusTextExtraSmall, #b_results>.b_top .b_focusTextExtraSmall a,#b_results>.b_top .b_focusTextSmall, #b_results>.b_top .b_focusTextSmall a, #b_results>.b_top .b_focusTextMedium,#b_results>.b_top .b_focusTextMedium a, #b_results>.b_top .b_focusTextLarge, #b_results>.b_top .b_focusTextLarge a,.lite-entcard-exp.exp-rs h2, .lite-entcard-exp-itemdata, #b_results .b_algo .b_vlist2col.b_deep,.tab-menu.tab-hasnav > ul > li, #b_context, #b_context #wpc_eif,.b_localDesktopInfoCard h2.b_entityTitle, #b_results .b_localDesktopInfoCard h2.b_entityTitle, #b_context .b_localDesktopInfoCard h2.b_entityTitle,.b_subModule h2, #b_context, #b_context #wpc_eif, .wr_rev, .wr_rat,#b_content .b_sgmbtns a.cbtn, #b_content .b_sgmbtns a.cbtn:visited, #b_content .b_sgmbtns .b_tpoptbtn, #b_content .b_sgmbtns .b_tpoptbtn:visited, #container.MicrosoftMap .b_sgmbtns a.cbtn, #container.MicrosoftMap .b_sgmbtns a.cbtn:visited, #container.MicrosoftMap .b_sgmbtns .b_tpoptbtn, #container.MicrosoftMap .b_sgmbtns .b_tpoptbtn:visited,.scs_q, .scs_tx, #b_results .vertcard .lc_content .b_factrow,body {
-	color: var(--text-color) !important;
+/** Hyperlinks **/
+#b_results > li a, #b_tween a:visited, #b_results .b_no a, .wr_pub {
+	/* color: #1890ff !important; */
+	color: #678eb2 !important;
+}
+
+/** Next and back buttons **/
+.sb_pagN_bp:hover:after, .sb_pagN_bp:active:after, .sb_pagN_bp:focus:after,.sb_pagP_bp:hover:after, .sb_pagP_bp:active:after, .sb_pagP_bp:focus:after {
+	-webkit-transform-origin: -430px 0 !important;
+	transform-origin: -430px 0 !important;
+}
+
+.b_pag a:hover {
+	background-color: var(--very-dark) !important;
 }

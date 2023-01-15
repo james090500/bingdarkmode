@@ -1,0 +1,18 @@
+#vvlb {
+    background: var(--very-dark) !important;
+    box-shadow: inset -10px 0 8px -8px var(--dark-light) !important;
+}
+
+.touchQuery .carousel .carousel-controls, .touchQuery .carousel .items, .touchQuery .carousel .item,
+.touchQuery .carousel .carousel-controls .nav_left, .touchQuery .carousel .carousel-controls .nav_right, #rfPane,
+#miniheader #miniheader_data .itm {
+    background: var(--very-dark) !important;
+}
+
+.mc_vtvc_meta, .dg_u, body .carousel {
+    background: var(--very-dark) !important;
+}
+
+.inline_tile.multi_ln_cap .carousel .item .card .tit {
+    background: var(--dark) !important;
+}
