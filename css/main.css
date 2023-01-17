@@ -36,14 +36,8 @@ html, body, .hb_section:active, .hb_section:hover, .hb_section:visited,
 	background-color: var(--dark) !important;
 }
 
-#sw_as .sa_as .sa_sg .sa_tm, #sw_as .sa_as .b_tHeader, #sw_as .sa_as .b_demoteText, #sw_as .sa_as .b_secondaryText,
-#sw_as .sa_as .b_attribution, #sw_as .sa_as .b_factrow, #sw_as .sa_as #sa_ul .b_focusLabel, #sw_as .sa_as .b_footnote,
-#sw_as .sa_as .b_ad .b_adlabel, #sw_as .sa_as .b_expando .b_subModule, #sw_as .sa_as .b_expando .b_suppModule,
-#sw_as .sa_as .b_algo .b_vList td, #sw_as .sa_as .b_expando .b_secondaryText, #sw_as .sa_as .b_expando .b_attribution,
-#sw_as .sa_as .b_expando .b_factrow, #sw_as .sa_as .b_expando .b_footnote, #sw_as .sa_as .ctxtb, #sw_as .as_msbblocksug,
-#sw_as .as_msbblockheader, #sw_as .sa_msbribboncontainer, #sw_as .sa_as .sa_rmvd, #sw_as .sa_as .sa_drw, #sw_as .sa_as li.pp_tile,
-#sw_as .sa_as .sa_tm strong, #sw_as .sa_as table {
-	color: var(--text-color) !important;
+.pp_title, .pp_titleOnly, .sa_tm_text, .sa_tm_text strong {
+	color: var(--text-color) !important
 }
 
 /** More Search */

@@ -12,7 +12,7 @@
     "content_scripts": [
         {
             "css": ["css/main.css"],
-            "js": ["js/main.js"],
+            "js": ["js/tinycolor.min.js", "js/main.js"],
             "matches": [
                 "https://bing.com/*",
                 "https://www.bing.com/*"

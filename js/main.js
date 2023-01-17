@@ -1,32 +1,55 @@
 window.onload = function() {
-   // Check all elements
-   this.loopElements();
+    // Check all elements
+    this.loopElements();
 }
+
+const targetNode = document.getElementsByTagName("body")[0];
+const config = { attributes: true, childList: true, subtree: true };
+// Callback function to execute when mutations are observed
+const callback = (mutationList, observer) => {
+    for (const mutation of mutationList) {
+        if (mutation.type === "childList" && mutation.target.localName != "body") {
+            for(node of mutation.addedNodes) {
+                this.changeFontColour(node)
+                this.changeBackgroundColour(node)
+            }
+        }
+    }
+};
+
+// Create an observer instance linked to the callback function
+const observer = new MutationObserver(callback);
+
+// Start observing the target node for configured mutations
+observer.observe(targetNode, config);
+
 
 function loopElements() {
     var tags = document.getElementsByTagName("*");
     for(tag of tags) {
-        this.changeColour(tag);
+        this.changeFontColour(tag)
+        this.changeBackgroundColour(tag);
     }
 }
 
-function changeColour(element) {
+function changeFontColour(element) {
     const compStyles = window.getComputedStyle(element);
     let fontColor = compStyles.getPropertyValue('color')
 
     //Split rgb in to values
-    let rgb = fontColor.replace(/[^\d,]/g, '').split(',');
-    let red = rgb[0];
-    let green = rgb[1];
-    let blue = rgb[2];
+    let color = tinycolor(fontColor);
+    if(color.isDark()) {
+        element.style.color = color.brighten(60);
+    }
+}
 
-    //If colour is blackish
-    if(red <= 100 && green <= 100 && blue <= 100) {
-        red = Math.abs(red - 255);
-        green = Math.abs(green - 255);
-        blue = Math.abs(blue - 255);
+function changeBackgroundColour(element) {
+    const compStyles = window.getComputedStyle(element);
+    let backgroundColor = compStyles.getPropertyValue('background')
 
-        //Set the colour
-        element.style.color = element.style.color = `rgb(${red},${green}, ${blue})`
+    //Split rgb in to values
+    let color = tinycolor(backgroundColor);
+    if(color.isLight()) {
+        element.style.background = color.darken(80);
     }
 }
